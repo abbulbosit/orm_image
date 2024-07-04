@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>This is comments page</h1>
+
+    {% for i in comments%}
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">comment</h5>
+            <p class="card-text">{{i.text}}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+          </ul>
+          <div class="card-body">
+          </div>
+        </div>
+    {% endfor %}
+<a href="http://127.0.0.1:8000/">Back</a>
+</body>
+</html>
